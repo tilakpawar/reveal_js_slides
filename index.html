@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/beige.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+    <style>
+
+
+    {
+        box-sizing: border-box;
+    }
+    /* Set additional styling options for the columns*/
+    .column {
+    float: left;
+    width: 50%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    </style>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+<!--
+
+				<section data-transition="zoom-in fade-out">
+					<h3>Master Thesis</h3>
+					<img src="examples/assets/Eclipsing_binary_stars_ESO.jpeg"; border="25%">
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="a">
+					<h2>Academic Journey So Far...</h2>
+					<h4>Undergraduate</h4>
+				</section>
+				<section data-auto-animate data-auto-animate-id="a">
+					<h2>Academic Journey So Far...</h2>
+					<h4>Undergraduate</h4>
+					<h4>MS in Astrophysics, Uni-Potsdam</h4>
+				</section>
+				<section data-auto-animate data-auto-animate-id="a">
+					<h2>Academic Journey So Far...</h2>
+					<h4>Undergraduate</h4>
+					<h4>MS in Astrophysics, Uni-Potsdam</h4>
+					<h4>Stellar Astrophysics Group</h4>
+				</section>
+				<section data-auto-animate data-auto-animate-id="a">
+					<h2>Academic Journey So Far...</h2>
+					<h4>Undergraduate</h4>
+					<h4>MS in Astrophysics, Uni-Potsdam</h4>
+					<h4>Stellar Astrophysics Group</h4>
+					<h4>CAMK-Torun</h4>
+				</section>
+				<section data-auto-animate data-auto-animate-id="a">
+					<h2>Academic Journey So Far...</h2>
+					<h4>Undergraduate</h4>
+					<h4>MS in Astrophysics, Uni-Potsdam</h4>
+					<h4>Stellar Astrophysics Group</h4>
+					<h4>CAMK-Torun</h4>
+					<h4>Eclipsing Binaries</h4>
+				</section>
+
+-->
+				<section data-auto-animate>
+					<p data-id="text-props" style="background: #f7f3de; line-height: 1em; letter-spacing: 0em;">CAMK PhD Seminar, 2021</p>
+					<img src="examples/assets/camk-pan-logo.jpeg" height="300px">
+				</section>
+
+				<section>
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Introduction</p>
+
+    					<div class="row">
+        					<div class="column" style="background-color: #f7f3de;">
+            					<img src="examples/assets/Eclipsing_binary_stars_ESO.jpeg" height="275px">
+        					</div>
+        					<div class="column" style="background-color: #f7f3de;">
+            					<img src="examples/assets/Eclipsing_binary_stars_ESO.jpeg" height="275px">
+        					</div>
+    					</div>
+
+					</section>
+
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Introduction Continued...</p>
+
+    					<div class="row">
+        					<div class="column" style="background-color: #f7f3de;">
+            					<img src="examples/assets/Eclipsing_binary_stars_ESO.jpeg" height="275px">
+        					</div>
+        					<div class="column" style="background-color: #f7f3de;">
+            					<img src="examples/assets/Eclipsing_binary_stars_ESO.jpeg" height="275px">
+        					</div>
+    					</div>
+    
+					</section>
+				</section>
+
+				<section>
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Master Project</p>
+						<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+							import React, { useState } from 'react';
+
+							function Example() {
+							  const [count, setCount] = useState(0);
+
+							  return (
+							    ...
+							  );
+							}
+						</code></pre>
+					</section>
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Master Project</p>
+						<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+							function Example() {
+							  const [count, setCount] = useState(0);
+
+							  return (
+							    &lt;div&gt;
+							      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+							      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+							        Click me
+							      &lt;/button&gt;
+							    &lt;/div&gt;
+							  );
+							}
+						</code></pre>
+					</section>
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Master Project</p>
+						<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+							function Example() {
+							  // A comment!
+							  const [count, setCount] = useState(0);
+
+							  return (
+							    &lt;div&gt;
+							      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+							      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+							        Click me
+							      &lt;/button&gt;
+							    &lt;/div&gt;
+							  );
+							}
+						</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">CAMK Toru&nacute;</p>
+						<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+							import React, { useState } from 'react';
+
+							function Example() {
+							  const [count, setCount] = useState(0);
+
+							  return (
+							    ...
+							  );
+							}
+						</code></pre>
+					</section>
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">CAMK Toru&nacute;</p>
+						<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+							function Example() {
+							  const [count, setCount] = useState(0);
+
+							  return (
+							    &lt;div&gt;
+							      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+							      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+							        Click me
+							      &lt;/button&gt;
+							    &lt;/div&gt;
+							  );
+							}
+						</code></pre>
+					</section>
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">CAMK Toru&nacute;</p>
+						<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+							function Example() {
+							  // A comment!
+							  const [count, setCount] = useState(0);
+
+							  return (
+							    &lt;div&gt;
+							      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+							      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+							        Click me
+							      &lt;/button&gt;
+							    &lt;/div&gt;
+							  );
+							}
+						</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section data-auto-animate>
+						
+						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Swapping list items</p>
+						<ul>
+							<li>One</li>
+							<li>Two</li>
+							<li>Three</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Swapping list items</p>
+						<ul>
+							<li>Two</li>
+							<li>One</li>
+							<li>Three</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Swapping list items</p>
+						<ul>
+							<li>Two</li>
+							<li>Three</li>
+							<li>One</li>
+						</ul>
+					</section>
+				</section>
+
+<section data-auto-animate>
+
+<section>
+
+<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Current Projects</p>
+</section>			
+				<section data-transition="zoom-in fade-out"><p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Eclipsing Binaries</p>
+
+					    <div class="row">
+					    	<video src="examples/assets/eso1311b.mp4" controls loop autoplay height="500px"></video>
+					    </div>
+
+				</section>
+
+
+
+
+				<section data-transition="zoom-in fade-out"><p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">CREME Project</p></section>
+
+
+
+
+				<section data-transition="zoom-in fade-out"><p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Photometry</p>	
+
+    <div class="row">
+        <div class="column" style="background-color: #f7f3de;">
+			<video src="examples/assets/eso1311b.mp4" height="300px" loop controls autoplay></video>
+        </div>
+        <div class="column" style="background-color: #f7f3de;">
+<h4>
+	<ul>
+		<li style="padding-bottom: 14px;">First Item Here</li>
+		<li style="padding-bottom: 14px;">Second Item Here</li>
+		<li style="padding-bottom: 14px;">Third Item Here</li>
+		<li style="padding-bottom: 14px;">Fourth Item Here</li>
+		<li style="padding-bottom: 14px;">Fifth Item Here</li>
+	</ul>
+</h4>
+        </div>
+    </div>
+
+
+				</section>
+
+
+
+
+				<section data-transition="zoom-in fade-out">Spectroscopy</section>
+
+
+
+
+				<section data-transition="zoom-in fade-out">Pulsating Stars</section>
+
+
+
+
+				<section data-transition="zoom-in fade-out">Stellar Evolution Modelling</section>
+
+
+
+				<section data-transition="zoom-in fade-out">Current Project</section>
+
+</section>
+
+				<section data-transition="zoom-in fade-out">
+						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Questions <h1>???</h1></p>
+
+</section>
+
+
+</div>
+</div>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
