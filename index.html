@@ -31,6 +31,36 @@
     display: table;
     clear: both;
     }
+
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 5px;
+}
+
+.left {
+  left: 0;
+  background-color: #f7f3de;
+}
+
+.right {
+  right: 0;
+  background-color: #f7f3de;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
     </style>
 
 	<body>
@@ -84,142 +114,80 @@
 
 				<section>
 					<section data-auto-animate>
-						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Introduction</p>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 1.1em; letter-spacing: 0.075em;">Introduction</p>
+					</section>
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 1.0em; letter-spacing: 0em;">Fergusson College (Physics, Undergrad)</p>
 
     					<div class="row">
-        					<div class="column" style="background-color: #f7f3de;">
-            					<img src="examples/assets/Eclipsing_binary_stars_ESO.jpeg" height="275px">
-        					</div>
-        					<div class="column" style="background-color: #f7f3de;">
-            					<img src="examples/assets/Eclipsing_binary_stars_ESO.jpeg" height="275px">
-        					</div>
+            					<img src="examples/assets/FC.jpeg" width="900px">
+    					</div>
+
+					</section>
+
+			  					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 1.0em; letter-spacing: 0em;">Universit&auml;t Potsdam (Astrophysics, MS)</p>
+
+    					<div class="row">
+            					<img src="examples/assets/Uni_Potsdam.jpeg" width="800px">
     					</div>
 
 					</section>
 
 					<section data-auto-animate>
-						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Introduction Continued...</p>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 1.0em; letter-spacing: 0em;">CAMK Toru&nacute;</p>
 
     					<div class="row">
-        					<div class="column" style="background-color: #f7f3de;">
-            					<img src="examples/assets/Eclipsing_binary_stars_ESO.jpeg" height="275px">
-        					</div>
-        					<div class="column" style="background-color: #f7f3de;">
-            					<img src="examples/assets/Eclipsing_binary_stars_ESO.jpeg" height="275px">
-        					</div>
-    					</div>
+            					<img src="examples/assets/CAMK_Torun.png" width="300px">
+</div>
+					</section>
+</section>
+
+
+
+				<section>
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 1.6em; letter-spacing: 0.125em;">Topics of Interest</p>
+					</section>
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 1em; letter-spacing: 0em;">Eclipsing Binaries</p>
+
+					</section>
+
+
+				<section data-background-video="examples/assets/eso1311b.mp4">
+					
+				</section>
+
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 1em; letter-spacing: 0em;">Master Thesis</p>
+
+					</section>
+
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 1em; letter-spacing: 0em;">Some Text Here...</p>
+
+    <div class="row">
+			<p align="center"><video margin-left="auto" display: block margin-top="auto" margin-bottom="auto" src="examples/assets/Turbulent Times_ When stars approach.mp4" controls autoplay loop height="450px"></video>
+    </div>
     
 					</section>
 				</section>
 
-				<section>
-					<section data-auto-animate>
-						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Master Project</p>
-						<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-							import React, { useState } from 'react';
 
-							function Example() {
-							  const [count, setCount] = useState(0);
 
-							  return (
-							    ...
-							  );
-							}
-						</code></pre>
-					</section>
-					<section data-auto-animate>
-						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Master Project</p>
-						<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-							function Example() {
-							  const [count, setCount] = useState(0);
 
-							  return (
-							    &lt;div&gt;
-							      &lt;p&gt;You clicked {count} times&lt;/p&gt;
-							      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-							        Click me
-							      &lt;/button&gt;
-							    &lt;/div&gt;
-							  );
-							}
-						</code></pre>
-					</section>
-					<section data-auto-animate>
-						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Master Project</p>
-						<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-							function Example() {
-							  // A comment!
-							  const [count, setCount] = useState(0);
 
-							  return (
-							    &lt;div&gt;
-							      &lt;p&gt;You clicked {count} times&lt;/p&gt;
-							      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-							        Click me
-							      &lt;/button&gt;
-							    &lt;/div&gt;
-							  );
-							}
-						</code></pre>
-					</section>
-				</section>
 
 				<section>
+
 					<section data-auto-animate>
-						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">CAMK Toru&nacute;</p>
-						<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-							import React, { useState } from 'react';
-
-							function Example() {
-							  const [count, setCount] = useState(0);
-
-							  return (
-							    ...
-							  );
-							}
-						</code></pre>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 1.8em; letter-spacing: 0.15em;">Work at CAMK Toru&nacute;</p>
 					</section>
-					<section data-auto-animate>
-						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">CAMK Toru&nacute;</p>
-						<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-							function Example() {
-							  const [count, setCount] = useState(0);
 
-							  return (
-							    &lt;div&gt;
-							      &lt;p&gt;You clicked {count} times&lt;/p&gt;
-							      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-							        Click me
-							      &lt;/button&gt;
-							    &lt;/div&gt;
-							  );
-							}
-						</code></pre>
-					</section>
-					<section data-auto-animate>
-						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">CAMK Toru&nacute;</p>
-						<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-							function Example() {
-							  // A comment!
-							  const [count, setCount] = useState(0);
 
-							  return (
-							    &lt;div&gt;
-							      &lt;p&gt;You clicked {count} times&lt;/p&gt;
-							      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-							        Click me
-							      &lt;/button&gt;
-							    &lt;/div&gt;
-							  );
-							}
-						</code></pre>
-					</section>
-				</section>
-
-				<section>
 					<section data-auto-animate>
-						
-						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Swapping list items</p>
+						<h2>ETV Analysis</h2>
 						<ul>
 							<li>One</li>
 							<li>Two</li>
@@ -227,69 +195,56 @@
 						</ul>
 					</section>
 					<section data-auto-animate>
-						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Swapping list items</p>
+						<h2>Binary Modelling</h2>
 						<ul>
-							<li>Two</li>
-							<li>One</li>
+							<li>New</li>
+							<li>Words</li>
 							<li>Three</li>
 						</ul>
 					</section>
 					<section data-auto-animate>
-						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Swapping list items</p>
+						<h2>Analysis of Composite Spectra</h2>
 						<ul>
 							<li>Two</li>
 							<li>Three</li>
 							<li>One</li>
 						</ul>
 					</section>
+
+
+</section>
+
+
+
+				<section>
+
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 2.0em; letter-spacing: 0.17em;">Long term goals...</p>
+					</section>
+
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 1em; letter-spacing: 0em;">Where are we headed?</p>
+
+    					<div class="row" style="center">
+            					<img src="examples/assets/Eclipsing_binary_stars_ESO.jpeg" width="550px">
+
+					</section>
+
+				<section data-background-video="examples/assets/Turbulent Times_ When stars approach.mp4">
+					
 				</section>
 
-<section data-auto-animate>
 
-<section>
-
-<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Current Projects</p>
-</section>			
-				<section data-transition="zoom-in fade-out"><p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Eclipsing Binaries</p>
-
-					    <div class="row">
-					    	<video src="examples/assets/eso1311b.mp4" controls loop autoplay height="500px"></video>
-					    </div>
-
-				</section>
-
-
-
-
-				<section data-transition="zoom-in fade-out"><p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">CREME Project</p></section>
-
-
-
-
-				<section data-transition="zoom-in fade-out"><p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Photometry</p>	
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 1em; letter-spacing: 0em;">Some Text Here...</p>
 
     <div class="row">
-        <div class="column" style="background-color: #f7f3de;">
-			<video src="examples/assets/eso1311b.mp4" height="300px" loop controls autoplay></video>
-        </div>
-        <div class="column" style="background-color: #f7f3de;">
-<h4>
-	<ul>
-		<li style="padding-bottom: 14px;">First Item Here</li>
-		<li style="padding-bottom: 14px;">Second Item Here</li>
-		<li style="padding-bottom: 14px;">Third Item Here</li>
-		<li style="padding-bottom: 14px;">Fourth Item Here</li>
-		<li style="padding-bottom: 14px;">Fifth Item Here</li>
-	</ul>
-</h4>
-        </div>
+			<p align="center"><video margin-left="auto" display: block margin-top="auto" margin-bottom="auto" src="examples/assets/Turbulent Times_ When stars approach.mp4" controls autoplay loop height="450px"></video>
     </div>
-
-
+    
+					</section>
 				</section>
-
-
-
+<!--
 
 				<section data-transition="zoom-in fade-out">Spectroscopy</section>
 
@@ -305,14 +260,62 @@
 
 
 
-				<section data-transition="zoom-in fade-out">Current Project</section>
+				<section data-transition="zoom-in fade-out">Current Project</section> 
 
 </section>
-
-				<section data-transition="zoom-in fade-out">
-						<p data-id="text-props" style="background: #f7f3de; line-height: 3em; letter-spacing: 0.2em;">Questions <h1>???</h1></p>
+-->
+<section data-transition="zoom-in fade-out">
+						<p data-id="text-props" style="background: #f7f3de; line-height: 2.5em; letter-spacing: 0.25em;">Questions</p>
+						<img src="examples/assets/XlO9.gif" height="400px">
 
 </section>
+</section>
+
+
+<section data-background-image="https://i.ytimg.com/vi/oAyQiCcIoTg/maxresdefault.jpg" data-auto-animate data-background-opacity='1'></section>
+	<section data-background-image="https://i.ytimg.com/vi/oAyQiCcIoTg/maxresdefault.jpg" data-auto-animate data-background-opacity='0.2'>
+		<p>	<ul>
+            						<li style="padding-bottom: 14px;">One means one one</li>
+            						<li style="padding-bottom: 14px;">Two means two two</li>
+            						<li style="padding-bottom: 14px;">Three means three three</li>
+            					</ul>
+            				</p>
+	</section>
+
+					<section data-background-video="examples/assets/eso1311b.mp4" onclick="this.play()"></section>
+
+				<section data-background-video="examples/assets/Turbulent Times_ When stars approach.mp4" data-auto-animate></section>
+
+			<section data-background-video="examples/assets/Turbulent Times_ When stars approach.mp4" data-auto-animate data-background-opacity='0.5'>
+					<p>	<ul>
+            						<li style="padding-bottom: 14px;">One means one one</li>
+            						
+            					</ul>
+            				</p>
+			</section>
+			<section data-background-video="examples/assets/Turbulent Times_ When stars approach.mp4" data-auto-animate data-background-opacity='0.5'>
+					<p>	<ul>
+            						<li style="padding-bottom: 14px;">One means one one</li>
+            						<li style="padding-bottom: 14px;">Two means two two</li>
+            						
+            					</ul>
+            				</p>
+			</section>
+						<section data-background-video="examples/assets/Turbulent Times_ When stars approach.mp4" data-auto-animate data-background-opacity='0.5'>
+					<p>	<ul>
+            						<li style="padding-bottom: 14px;">One means one one</li>
+            						<li style="padding-bottom: 14px;">Two means two two</li>
+            						<li style="padding-bottom: 14px;">Three means three three</li>
+            					</ul>
+            				</p>
+			</section>
+
+					<section data-auto-animate>
+						<p data-id="text-props" style="background: #f7f3de; line-height: 1.0em; letter-spacing: 0em;">Some Text Here...</p>
+    
+					</section>
+				</section>
+
 
 
 </div>
