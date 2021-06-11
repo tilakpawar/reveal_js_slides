@@ -215,6 +215,56 @@
 					</section>
 
 					<section data-background-image="examples/assets/Kepler_ETV.png" data-auto-animate data-background-opacity='1'></section>
+					
+									<section>
+					<section data-auto-animate>
+						<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+						import matplotlib.pyplot as plt
+						import subprocess
+						import pandas as pd
+						#.
+						#.
+						dft=pd.DataFrame(TF, columns=["Time","Flux"])
+						fir_t=float(dft["Time"].head(1))
+						las_t=float(dft["Time"].tail(1))
+						ncyc=int((las_t-fir_t)/float(per))#-(((fir_t-las_t)/float(per))%1)
+						print(ncyc)
+						nc=ncyc+1
+						#.
+						#.
+						new_time=open(new_par_file,'r')
+						Time_O=""
+						T_C=float(Time_C)-float(per)
+						T_oc=float(Time_O)-float(T_C)
+						T_ocp=str(Time_O)+str(" ")+str(T_oc)+str(" ")+str(n)+str(" ")+str(T_C)
+						print(T_ocp,file=open("OC_file",'a'))
+						</code></pre>
+					</section>
+					<section data-auto-animate>
+						<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+						import matplotlib.pyplot as plt
+						import subprocess
+						import pandas as pd
+						#.
+						#.
+						dft=pd.DataFrame(TF, columns=["Time","Flux"])
+						fir_t=float(dft["Time"].head(1))
+						las_t=float(dft["Time"].tail(1))
+						ncyc=int((las_t-fir_t)/float(per))#-(((fir_t-las_t)/float(per))%1)
+						print(ncyc)
+						nc=ncyc+1
+						#.
+						#.Dear Code,
+						#.Please Work...
+						#.
+						new_time=open(new_par_file,'r')
+						Time_O=""
+						T_C=float(Time_C)-float(per)
+						T_oc=float(Time_O)-float(T_C)
+						T_ocp=str(Time_O)+str(" ")+str(T_oc)+str(" ")+str(n)+str(" ")+str(T_C)
+						print(T_ocp,file=open("OC_file",'a'))
+						</code></pre>
+					</section>
 <!--					<section data-auto-animate>
 						<h2>ETV Analysis</h2>
 						<ul>
