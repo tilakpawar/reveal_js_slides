@@ -224,7 +224,7 @@
 						import pandas as pd
 						#.
 						#.
-						dft=pd.DataFrame(TF, columns=["Time","Flux"])
+						dft=pd.DataFrame('TF.dat', columns=["Time","Flux"])
 						fir_t=float(dft["Time"].head(1))
 						las_t=float(dft["Time"].tail(1))
 						ncyc=int((las_t-fir_t)/float(per))#-(((fir_t-las_t)/float(per))%1)
@@ -247,7 +247,7 @@
 						import pandas as pd
 						#.
 						#.
-						dft=pd.DataFrame(TF, columns=["Time","Flux"])
+						dft=pd.DataFrame('TF.dat', columns=["Time","Flux"])
 						fir_t=float(dft["Time"].head(1))
 						las_t=float(dft["Time"].tail(1))
 						ncyc=int((las_t-fir_t)/float(per))#-(((fir_t-las_t)/float(per))%1)
